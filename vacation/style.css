@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {}
+
+.nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    position: relative;
+    margin: 20px;
+
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: center;
+    grid-column-gap: 20px;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: end;
+    grid-column-gap: 20px;
+}
+
+.main_bg {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    top: -65px;
+}
+
+.mv {
+    background-size: 100%;
+    /* background-position: 50% center;
+    background-repeat: no-repeat; */
+    _height: 900px;
+    height: 880px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+
+.bg_L {
+    background-image: url(../vacation/vacation.jpg);
+
+}
+
+.bg_R {
+    background-color: #F8ECEB;
+    text-align: start;
+    height: 800px;
+}
+
+.bg_top {
+    display: grid;
+    grid-row-gap: 10px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.bg_top .title {
+    display: grid;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    margin-left: 10px;
+}
+
+.bg_bottom {
+    display: grid;
+    justify-content: end;
+
+}

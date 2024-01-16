@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a,
+li {
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+}
+
+
+body {
+    background-color: #FAFAFA;
+}
+
+.mt-15 {
+    margin-top: 15px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.main {}
+
+.login_main {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+.login_main>div {
+    _margin: 0 50px;
+
+}
+
+.login_R {
+    width: 350px;
+    margin-left: 20px;
+}
+
+.login_box {
+    border: 1px solid rgb(210, 210, 210);
+    padding: 20px;
+    margin: 15px 0 0 0;
+
+}
+
+.login_form input,
+button {
+    height: 40px;
+    width: 100%;
+    margin-bottom: 5px;
+    border: 1px solid rgb(210, 210, 210);
+}
+
+.btn {
+    height: 30px;
+    margin: 10px 0;
+    background-color: #B2DFFC;
+    color: white;
+    border-radius: 6px;
+    border: 0;
+    font-weight: 700;
+
+}
+
+.bar {
+    text-align: center;
+}
+
+.login_sns {
+    text-align: center;
+}
+
+
+.join {
+    border: 1px solid rgb(210, 210, 210);
+    padding: 20px;
+    width: 350px;
+    text-align: center;
+
+}
+
+.app {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.app div img {
+    width: 146px;
+}
+
+.download {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    padding: 20px 100px 0px 100px;
+}
+
+.ft_nav {
+    width: 1000px;
+}
+
+.ft_info {
+    display: grid;
+    grid-template-columns: repeat(11, auto);
+    font-weight: 700;
+    font-size: 14px;
+
+}
+
+.ft_info li a {
+    color: #385185;
+}
