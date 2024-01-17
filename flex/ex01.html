@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .main {
+            display: flex;
+            justify-content: center;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            background-color: DodgerBlue;
+            width: 80%;
+            height: 500px;
+            /* 메인 액시아스(main axis) : 메인 축 정렬*/
+        }
+
+        .flex-container>div {
+            background-color: #f1f1f1;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+            flex: 1;
+            height: 50px;
+        }
+
+        .a {}
+
+        .b {
+            flex: 2;
+        }
+
+        .c {}
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="flex-container">
+            <div class="a">1</div>
+            <div class="b">2</div>
+            <div class="c">3</div>
+        </div>
+    </div>
+</body>
+
+</html>
