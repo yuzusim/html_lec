@@ -50,6 +50,7 @@ nav {
     width: 70px;
     height: 45px;
     border-radius: var(--radius-6);
+    cursor: pointer;
 }
 
 .search-input {
@@ -69,7 +70,7 @@ nav {
 .title {
     font-size: 25px;
     font-weight: 700;
-    ;
+
 }
 
 /*공통 end*/
