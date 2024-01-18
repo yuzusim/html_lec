@@ -2,61 +2,15 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>에어비앤비</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
 
-        header {
-            background-image: url("images/background.jpg");
-            height: 800px;
-            background-size: 100% 100%;
-        }
+    <link rel="shortcut icon" sizes="76x76" type="image/x-icon"
+        href="https://a0.muscache.com/airbnb/static/logotype_favicon-21cc8e6c6a2cca43f061d2dcabdf6e58.ico">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/base.css">
 
-        nav {
-            display: flex;
-            justify-content: space-between;
-            _margin: 0 20px;
-            padding: 0 20px;
-        }
-
-        .menu {
-            display: grid;
-            grid-template-columns: auto auto auto auto;
-            grid-column-gap: 10px;
-            color: white;
-            font-weight: 800;
-        }
-
-        .logo {
-            color: white;
-            font-size: 35px;
-            font-weight: 800;
-        }
-
-        .search-box {
-            display: -block;
-            position: relative;
-            top: 10px;
-            left: 50px;
-            background-color: white;
-            width: 430px;
-            height: 500px;
-            /*  TODO 나중에 지워야지 */
-            box-shadow: 5px 5px 10px 0 rgba(186, 186, 186);
-        }
-
-        table {
-            width: 100%;
-        }
-
-        table input {
-            width: 100%;
-        }
-    </style>
 </head>
 
 <body>
@@ -64,7 +18,7 @@
         <!--헤더 start-->
         <header>
             <nav>
-                <div class="logo">
+                <div class="logo fw-800">
                     <svg viewBox="0 0 1000 1000" role="presentation" aria-hidden="true" focusable="false"
                         style="height: 1em; width: 1em; display: inline-block; fill: currentcolor;">
                         <path
@@ -73,37 +27,37 @@
                     </svg>
                 </div>
                 <div class="menu">
-                    <div>호스트가 되어보세요</div>
-                    <div>도움말</div>
-                    <div>회원가입</div>
-                    <div>로그인</div>
+                    <div class="ft-16 fw-600">호스트가 되어보세요</div>
+                    <div class="ft-16 fw-600">도움말</div>
+                    <div class="ft-16 fw-600">회원가입</div>
+                    <div class="ft-16 fw-600">로그인</div>
                 </div>
             </nav>
             <div class="search-box">
-                <div>특색 있는 숙소와 즐길 거리를 예약하세요.</div>
-                <table border="1">
+                <div class="ft-30 fw-600 pt-10 pb-10">특색 있는 숙소와 즐길<br> 거리를 예약하세요.</div>
+                <table>
                     <tr>
-                        <td colspan="2">목적지</td>
+                        <td colspan="2" class="fw-600 pt-10 pb-10">목적지</td>
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <input type="text" placeholder="모든 위치">
+                            <input type="text" placeholder="모든 위치" class="search-input">
                         </td>
                     </tr>
                     <tr>
-                        <td>체크인</td>
-                        <td>체크아웃</td>
+                        <td class="pt-10 pb-10">체크인</td>
+                        <td class="pt-10 pb-10">체크아웃</td>
                     </tr>
                     <tr>
-                        <td><input type="date"></td>
-                        <td><input type="date"></td>
+                        <td><input type="date" class="search-input"></td>
+                        <td><input type="date" class="search-input"></td>
                     </tr>
                     <tr>
-                        <td colspan="2">인원</td>
+                        <td colspan="2" class="pt-10 pb-10">인원</td>
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <select>
+                            <select class="search-input">
                                 <option>인원</option>
                                 <option>1</option>
                                 <option>2</option>
@@ -112,8 +66,8 @@
                     </tr>
                 </table>
 
-                <div>
-                    <button>검색</button>
+                <div class="search-btn">
+                    <button class="fw-800 ft-15">검색</button>
                 </div>
 
             </div>
@@ -124,27 +78,27 @@
         <div class="body">
             <!--에어비앤비 둘러보기 start-->
             <section>
-                <div class="title">에어비앤비 둘러보기</div>
+                <div class="title mb-20">에어비앤비 둘러보기</div>
                 <div class="card-box">
                     <div class="card">
-                        <div class="card-img"></div>
-                        <div class="card-title">숙소 및 부티크 호텔</div>
+                        <div class="card-img"><img src="./images/card1.jpg"></div>
+                        <div class="card-title ml-10">숙소 및 부티크 호텔</div>
                     </div>
                     <div class="card">
-                        <div class="card-img"></div>
-                        <div class="card-title">트립</div>
+                        <div class="card-img"><img src="./images/card2.jpg"></div>
+                        <div class="card-title ml-10">트립</div>
                     </div>
                     <div class="card">
-                        <div class="card-img"></div>
-                        <div class="card-title">어드벤처</div>
+                        <div class="card-img"><img src="./images/card3.jpg"></div>
+                        <div class="card-title ml-10">어드벤처</div>
                     </div>
                     <div class="card">
-                        <div class="card-img"></div>
-                        <div class="card-title">레스토랑</div>
+                        <div class="card-img"><img src="./images/card4.jpg"></div>
+                        <div class="card-title ml-10">레스토랑</div>
                     </div>
                 </div>
 
-                <div class="ad-img">
+                <div class="ad-img ad-img1 mt-40 mb-40">
                     사막사진
                 </div>
             </section>
@@ -152,13 +106,13 @@
 
             <!--추천 여행지 start-->
             <section>
-                <div class="title">추천 여행지</div>
-                <div class="img-box">
-                    <div class="img">사진1</div>
-                    <div class="img">사진2</div>
-                    <div class="img">사진3</div>
-                    <div class="img">사진4</div>
-                    <div class="img">사진5</div>
+                <div class="title mb-20">추천 여행지</div>
+                <div class="img-box mb-20">
+                    <div class="img img1"></div>
+                    <div class="img img2"></div>
+                    <div class="img img3"></div>
+                    <div class="img img4"></div>
+                    <div class="img img5"></div>
                 </div>
             </section>
             <!--추천 여행지 end-->
@@ -166,19 +120,19 @@
             <!--에어비앤비 플러스를 만나보세요! start-->
             <section>
                 <div class="title">에어비앤비 플러스를 만나보세요!</div>
-                <div class="sub-title">퀄리티와 인테리어 디자인이 검증된 숙소 셀렉션</div>
-                <div class="ad-img">집 사진</div>
+                <div class="sub-title ft-16">퀄리티와 인테리어 디자인이 검증된 숙소 셀렉션</div>
+                <div class="ad-img ad-img2">집 사진</div>
             </section>
             <!--에어비앤비 플러스를 만나보세요! end-->
 
             <!-- 전 세계 숙소 start -->
             <section>
-                <div class="title">전 세계 숙소</div>
+                <div class="title mb-20">전 세계 숙소</div>
                 <div class="home-box">
                     <div class="home">
-                        <div class="home-img"></div>
-                        <div class="text1"></div>
-                        <div class="text2"></div>
+                        <div class="home-img home-img1"></div>
+                        <div class="text1">오두막 · BALIAN BEACH, BALI</div>
+                        <div class="text2 ft-18 fw-600">BALIAN TREEHOUSE w beautiful pool</div>
                         <div class="grade-box">
                             <div class="star">⭐⭐⭐⭐⭐</div>
                             <div class="count">185</div>
@@ -186,62 +140,72 @@
                         </div>
                     </div>
                     <div class="home">
-                        <div class="home-img"></div>
-                        <div class="text1"></div>
-                        <div class="text2"></div>
+                        <div class="home-img home-img2"></div>
+                        <div class="text1">키클라데스 주택 · 이아(OIA)</div>
+                        <div class="text2 ft-18 fw-600">Unique Architecture Cave House</div>
                         <div class="grade-box">
                             <div class="star">⭐⭐⭐⭐⭐</div>
-                            <div class="count">185</div>
+                            <div class="count">188</div>
                             <div class="text3">슈퍼호스트</div>
                         </div>
                     </div>
                     <div class="home">
-                        <div class="home-img"></div>
-                        <div class="text1"></div>
-                        <div class="text2"></div>
+                        <div class="home-img home-img3"></div>
+                        <div class="text1">성 · 트웬티나인 팜스(TWENTYNINE PALMS)</div>
+                        <div class="text2 ft-18 fw-600">Tile House</div>
                         <div class="grade-box">
                             <div class="star">⭐⭐⭐⭐⭐</div>
-                            <div class="count">185</div>
+                            <div class="count">367</div>
                             <div class="text3">슈퍼호스트</div>
                         </div>
                     </div>
                     <div class="home">
-                        <div class="home-img"></div>
-                        <div class="text1"></div>
-                        <div class="text2"></div>
+                        <div class="home-img home-img4"></div>
+                        <div class="text1">검증됨 · 케이프타운</div>
+                        <div class="text2 ft-18 fw-600">Modern, Chic Penthouse with Mountain, City & Sea Views</div>
                         <div class="grade-box">
                             <div class="star">⭐⭐⭐⭐⭐</div>
-                            <div class="count">185</div>
+                            <div class="count">177</div>
                             <div class="text3">슈퍼호스트</div>
                         </div>
                     </div>
                     <div class="home">
-                        <div class="home-img"></div>
-                        <div class="text1"></div>
-                        <div class="text2"></div>
+                        <div class="home-img home-img5"></div>
+                        <div class="text1">아파트 전체 · 마드리드(MADRID)</div>
+                        <div class="text2 ft-18 fw-600">솔광장에 위치한 개인 스튜디오</div>
                         <div class="grade-box">
                             <div class="star">⭐⭐⭐⭐⭐</div>
-                            <div class="count">185</div>
+                            <div class="count">459</div>
                             <div class="text3">슈퍼호스트</div>
                         </div>
                     </div>
                     <div class="home">
-                        <div class="home-img"></div>
-                        <div class="text1"></div>
-                        <div class="text2"></div>
+                        <div class="home-img home-img6"></div>
+                        <div class="text1">집 전체 · HUMAC</div>
+                        <div class="text2 ft-18 fw-600">Vacation house in etno-eco village Humac</div>
                         <div class="grade-box">
                             <div class="star">⭐⭐⭐⭐⭐</div>
-                            <div class="count">185</div>
+                            <div class="count">119</div>
                             <div class="text3">슈퍼호스트</div>
                         </div>
                     </div>
                     <div class="home">
-                        <div class="home-img"></div>
-                        <div class="text1"></div>
-                        <div class="text2"></div>
+                        <div class="home-img home-img7"></div>
+                        <div class="text1">개인실 · 마라케시</div>
+                        <div class="text2 ft-18 fw-600">The Cozy Palace</div>
                         <div class="grade-box">
                             <div class="star">⭐⭐⭐⭐⭐</div>
-                            <div class="count">185</div>
+                            <div class="count">559</div>
+                            <div class="text3">슈퍼호스트</div>
+                        </div>
+                    </div>
+                    <div class="home">
+                        <div class="home-img home-img8"></div>
+                        <div class="text1">게스트용 별채 전체 · 로스앤젤레스</div>
+                        <div class="text2 ft-18 fw-600">Private Pool House with Amazing Views!</div>
+                        <div class="grade-box">
+                            <div class="star">⭐⭐⭐⭐⭐ </div>
+                            <div class="count">170</div>
                             <div class="text3">슈퍼호스트</div>
                         </div>
                     </div>
@@ -257,6 +221,5 @@
 
 
 </body>
-
 
 </html>
